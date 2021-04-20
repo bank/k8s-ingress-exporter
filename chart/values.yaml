@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: bank/k8s-ingress-exporter
+  repository: asia.gcr.io/cash-staging/exporter
   tag: latest
   pullPolicy: Always
 
@@ -19,7 +19,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - endpoint.example.com
+    - endpoint.cash-staging.com
   path: /
   tls:
   - secretName: tls-until-20200816
